@@ -30,9 +30,9 @@ For each patch in the image, we select the token with the highest probability in
 
 | **Version**       | **Size** | **Support pseudo image features** | **Checkpoint**                                                                        |
 |-------------------|----------|-----------------------------------|---------------------------------------------------------------------------------------|
-| VW-LMM-Vicuna     | 7B       |  False                            | [VW-LMM-Vicuna-7b](MYTH-Lab/VW-LMM-Vicuna-7b)           |
-| VW-LMM-Mistral    | 7B       |  False                            | [MYTH-Lab/VW-LMM-Mistral-7b](MYTH-Lab/VW-LMM-Mistral-7b)         |
-| VW-LMM-Vicuna-pif | 7B       |  True                             | [MYTH-Lab/VW-LMM-Vicuna-pif-7b](MYTH-Lab/VW-LMM-Vicuna-pif-7b) |
+| VW-LMM-Vicuna     | 7B       |  False                            | [VW-LMM-Vicuna-7b](https://huggingface.co/MYTH-Lab/VW-LMM-Vicuna-7b)           |
+| VW-LMM-Mistral    | 7B       |  False                            | [VW-LMM-Mistral-7b](https://huggingface.co/MYTH-Lab/VW-LMM-Mistral-7b)         |
+| VW-LMM-Vicuna-pif | 7B       |  True                             | [VW-LMM-Vicuna-pif-7b](https://huggingface.co/MYTH-Lab/VW-LMM-Vicuna-pif-7b) |
 
 
 VW-LMM, by constructing visual words to introduce visual supervisory information, achieves the best performance among models of the same scale of 7B, and obtains vision-language understanding capability competitive to or even surpassing that of 13B or even larger scale models.
