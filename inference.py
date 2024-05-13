@@ -72,24 +72,3 @@ outputs = tokenizer.batch_decode(output_ids[:, input_token_len:], skip_special_t
 outputs = outputs.strip()
 print(outputs)
 
-
-if __name__=="__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--base_model', type=str, default="./Text_encoder/model_best", )
-    parser.add_argument('--pretrain_model', type=str, default="./Text_encoder/model_best", )
-    parser.add_argument('--train_ds', type=str, default="./playground/twitter2015/MASC/train")
-    parser.add_argument('--eval_ds', type=str, default="./playground/twitter2015/MASC/dev")
-    parser.add_argument('--lr', type=float, default=2e-5)
-    parser.add_argument('--seed', type=int, default=0)
-    parser.add_argument('--itc', type=float, default=1.0)
-    parser.add_argument('--itm', type=float, default=1.0)
-    parser.add_argument('--epe', type=float, default=1.0)
-    parser.add_argument('--epoch', type=int, default=10)
-    parser.add_argument('--log_step', type=int, default=1)
-    parser.add_argument('--save_step', type=int, default=2000)
-    parser.add_argument('--batch_size', type=int, default=6)
-    parser.add_argument('--accumulation_steps', type=int, default=2)
-    parser.add_argument('--val_step', type=int, default=200)
-    parser.add_argument('--save_path', type=str, default="./checkpoints/MASC_2015")
-    args = parser.parse_args()
-
